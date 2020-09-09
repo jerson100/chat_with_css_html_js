@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Criptografía</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base/normalize.css">
+    <link rel="stylesheet" href="/css/base/base.css">
+    <link rel="stylesheet" href="/css/typograpy/typograpy.css">
+    <link rel="stylesheet" href="/css/components/header.css">
+    <link rel="stylesheet" href="/css/components/main-nav.css">
+    <link rel="stylesheet" href="/css/components/avatar.css">
+    <link rel="stylesheet" href="/css/components/icon.css">
+    <link rel="stylesheet" href="/css/components/search.css">
+    <link rel="stylesheet" href="/css/components/chat.css">
+    <link rel="stylesheet" href="/css/components/userLive.css">
+    <link rel="stylesheet" href="/css/components/user-status.css">
+    <link rel="stylesheet" href="/css/components/button.css">
+    <link rel="stylesheet" href="/css/utils/je-scroll.css">
+    <link rel="stylesheet" href="/css/page/main.css">
+    <script src="https://kit.fontawesome.com/56e0c4d4ed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__left">
+                <img src="/img/png/logo2.png" alt="logo de la universidad" class="header__logo">
+                <!-- <span class="header__title">Facebook</span> -->
+            </div>
+            <div class="header__right">
+                <div class="header__search">
+                    <div class="search search--display-xs-h search--display-md-b">
+                        <i class="search__icon fas fa-search"></i>
+                        <input type="text" placeholder="Search Facebook" class="search__input">
+                    </div>
+                </div>
+                <div class="header__nav">
+                    <nav class="main-nav" role="navigation">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <div class="icon icon--row-md">
+                                    <i class="icon__img fas fa-user-friends"></i>
+                                    <span class="icon__text icon__text--display-lg-b">Friends</span>
+                                </div>
+                            </li>
+                            <li class="main-nav__item main-nav__item--active">
+                                <div class="icon icon--row-md">
+                                    <i class="icon__img far fa-comment-dots"></i>
+                                    <span class="icon__text icon__text--display-lg-b">Messenger</span>
+                                </div>
+                            </li>
+                            <li class="main-nav__item">
+                                <div class="icon icon--row-md">
+                                    <i class="icon__img far fa-bell"></i>
+                                    <span class="icon__text icon__text--display-lg-b">Notifications</span>
+                                </div>
+                            </li>
+                            <li class="main-nav__item">
+                                <div class="avatar">
+                                    <img src="/img/jpg/yop.jpg" alt="jerson" class="avatar__img">
+                                    <span class="avatar__name">Jerson</span>
+                                    <i class="avatar__icon fas fa-caret-down"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main  class="main-page">
+        <div class="chat">
+            <div class="chat__left">
+                <div class="user-live">
+                    <div class="user-live__header">
+                        <h1 class="user-live__title h3">Usuarios activos</h1>
+                        <div class="user-live__actions">
+                            <div class="icon">
+                                <i class="icon__img fas fa-search"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="icon__img fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-live__body je-scroll">
+                        <ul class="user-live__list">
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop2.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop14.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop4.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop5.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop6.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop7.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop8.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop9.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop10.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop11.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop12.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop13.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop14.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop2.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop13.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop5.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop7.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop4.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop9.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                            <li class="user-live__item">
+                                <div class="user-status">
+                                    <div class="avatar">
+                                        <img src="/img/jpg/yop13.jpg" alt="jerson" class="avatar__img avatar__img--size-bigger">
+                                    </div>
+                                    <div class="user-status__description">
+                                        <span class="user-status__name">
+                                            Jerson Ramírez
+                                        </span>
+                                        <span class="user-status__time-connected">
+                                            Active
+                                        </span>
+                                    </div>
+                                    <time class="user-status__time">09:08</time>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-live__add">
+                        <div class="btn btn--circle btn--color-green">
+                            <div class="icon icon--size-smaller">
+                                <i class="icon__img far fa-edit"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat__right">
+                <p>Me aburri, luego lo termino</p>
+                <p>Atentamente <b>♥ Jerson Ramírez ♥</b></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

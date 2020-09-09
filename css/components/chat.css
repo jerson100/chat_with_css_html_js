@@ -1,0 +1,47 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat__left{
+    flex: 1 0 0;
+    height: 100%;
+    padding-top: 1.4rem;
+    padding-bottom: 0;
+    background-color: #fff;
+}
+
+.chat__right{
+    /* border: solid 1px royalblue; */
+    /* flex: 0 0 0; */
+    display: none;
+}
+
+@media screen and (min-width: 992px){
+
+    .chat{
+        flex-direction: row;
+    }
+
+    .chat__left{
+        flex: 0 0 30%;
+        max-width: 350px;
+    }
+
+    .chat__right{
+        flex: 1 0 0;
+        background-color: #fff;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .chat__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,47 @@
+.user-live{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.user-live__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
+.user-live__body{
+    flex: 1 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.user-live__title{
+    margin-bottom: 0;
+    color: rgb(42, 42, 42);
+}
+
+.user-live__actions{
+    display: flex;
+}
+
+.user-live__list{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* .user-live__item{
+    margin-bottom: 1rem;
+} */
+
+.user-live__add{
+    position: absolute;
+    right: .8rem;
+    bottom: .8rem;
+}

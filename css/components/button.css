@@ -1,0 +1,27 @@
+.btn{
+    padding: 1em;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    /* transform: scale(1); */
+    transition: transform 350ms ease;
+}
+
+.btn:active{
+    transform: scale(1.1) rotate(360deg);
+    background-color: rgba(47, 199, 156, 0.876);
+}
+
+.btn:hover{
+    background-color: rgba(47, 199, 156, 0.876);
+}
+
+.btn--circle{
+    border-radius: 50%;
+}
+
+.btn--color-green{
+    /* background-color: var(--green-color); */
+    background-color: rgba(47, 199, 156, 0.678);
+    color: #fff;
+}
